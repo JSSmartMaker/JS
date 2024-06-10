@@ -1,0 +1,244 @@
+@import "../../app.scss";
+@font-face {
+    font-family: "jj";
+    src: url(./Amstera.otf);
+}
+.navbar{
+    // height:70px;
+    // width:100%;
+   z-index: 999;
+    // position: fixed;
+    // background-color: #050b1d4b;
+    // backdrop-filter: blur(10px);
+
+    .bgg{
+        height:70px;
+    width:100%;
+   z-index: 1000;
+   position: fixed;
+   background-color: #050b1d4b;
+   backdrop-filter: blur(10px);
+    }
+    .wrapper{
+      max-width: 1366px;
+      display: flex;
+      align-items: center;
+      z-index:999;  
+
+    }
+
+    span{
+        font-family: "jj";
+       font-size: 20px;
+       font-weight: bold;
+       position: fixed;
+       margin-top:4%;
+       left:6%;
+       color:#a993fe;
+       z-index: 1100;
+       text-shadow: 0px 2px 1px white;
+      
+    }
+
+    .nav-txt{
+        position: fixed;
+        top: -1%;
+        width: 100%;
+        display: inline-flex;
+        z-index:1100;  
+    }
+    .nav-txt li{
+        position: relative;
+        left:35%;
+        font-weight: bold;
+        margin-top: 2%;
+        margin-left: 3%;
+        list-style-type: none;
+        display: inline-flex;
+        padding:4px 25px 0px 30px;
+        font-size: 17px;
+      
+    }
+.nav-txt li a::before{
+    content:"";
+    width:2rem;
+    height: 0.2em;
+    background: linear-gradient(90deg, #a993fe 0%, #7e61e7 100%);
+    border-radius: 0.5rem;
+    position:absolute;
+    bottom:-0.6em;
+    opacity: 0;
+    transform: translateX(-1.5rem);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.nav-txt li a:hover::before{
+    margin-top: 10%;
+    width:70%;
+    transform:translateX(0);
+    opacity:1;
+    cursor: pointer;
+}
+.nav-txt li a:hover{
+    color:#a993fe;
+}
+
+    .social{
+     
+        float: right;
+        display: flex;
+        position: fixed;
+        top:-0.5%;
+        right:4%;
+        z-index:999;  
+    }
+    .social li{
+      display: none;
+        margin-right: -6%;
+        list-style-type: none;
+        padding:20px 18px;
+    }
+    .social img{
+        display:flex;
+        height:30px;
+        width:30px;
+        
+    }
+
+     /*breakpoints*/
+    
+     @media screen and (max-width:1231px){
+        .social{
+            display: none;
+        }
+     }
+
+
+  @media screen and (max-width:1074px){
+    
+    .social1{
+        float: right;
+        display: flex;
+        position: relative;
+        top:-5%;
+        
+    }
+    .social1 li{
+      
+        margin-right: -6%;
+        list-style-type: none;
+        padding:20px 18px;
+    }
+    .social1 img{
+        display:flex;
+        height:30px;
+        width:30px;
+    }  
+    .bg{
+        display: block;
+    }
+    button{
+        display:block;
+    }
+    span{
+        
+        margin-top: 6%;
+        font-size: 25px;
+    }
+    .nav-txt li{
+        display: none;
+    }
+   
+    @media screen and (max-width:994px){
+        button{
+            position: fixed;
+            right:4.5%;
+        }
+    }
+
+    @media screen and (max-width:870px){
+        button{
+            position: fixed;
+            right:5.5%;
+        }
+    }
+    @media screen and (max-width:796px){
+
+        span{
+            margin-top: 8%; 
+        }
+        button{
+            position: fixed;
+            right:2%;
+        }
+        .sidebar .bg{
+            margin-right: -3%;
+        }
+    }
+    @media screen and (max-width:680px){
+        span{
+            margin-top: 8%; 
+        }
+        button{
+            position: fixed;
+            right: 6%;
+        }
+        .sidebar .bg{
+            margin-right: -1%;
+        }
+    }
+    @media screen and (max-width:592px){
+        span{
+            margin-top: 10%; 
+        }
+        button{
+            position: fixed;
+            right:7.5%;
+        }
+    }
+    @media screen and (max-width:425px){
+        span{
+            margin-top: 15%;
+            font-size:20px;
+        }
+        button{
+            position: fixed;
+            right:9.5%;
+        }
+    }
+    @media screen and (max-width:356px){
+        span{
+            margin-top: 19%;
+            font-size:18px;
+        }
+        button{
+            position: fixed;
+            right:12%;
+        }
+      
+    }
+    @media screen and (max-width:356px){
+        span{
+            margin-top: 19%;
+            font-size:18px;
+        }
+        button{
+            position: fixed;
+            right:4.5%;
+        }
+        .bg{
+            width:240px;
+        }
+      
+    }
+    @media screen and (max-width:320px){
+        button{
+            position: fixed;
+            margin-right: 10%;
+        
+        width:30px;
+        height: 30px;
+    }
+}
+}
+}
